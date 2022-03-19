@@ -1,0 +1,108 @@
+.container-slider {
+
+  position: relative;
+
+  @media (max-width: 498px) {
+    min-width: 100vw;
+    margin-left: -16px;
+  }
+
+  &::after {
+
+    @media (min-width: 1120px) {
+      display: none;
+    }
+
+
+    @media (max-width: 496px) {
+      content: "";
+      position: absolute;
+      top: 18px;
+      z-index: 5;
+      right: 0;
+      width: 24px;
+      height: 70px;
+      background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+    }
+  }
+
+  &--second {
+
+    &::after {
+
+      @media (min-width: 1120px) {
+        display: none;
+      }
+
+      @media (max-width: 496px) {
+        content: "";
+        position: absolute;
+        top: 18px;
+        z-index: 5;
+        right: 0;
+        width: 24px;
+        height: 158px;
+        background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+      }
+    }
+  }
+
+  &--third {
+
+    &--text {
+      margin: 0;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.2px;
+      color: #1B1C21;
+
+      @media (min-width: 765px) {
+        max-width: 420px;
+        margin-top: 20px;
+      }
+    }
+
+    &--get {
+      margin: 16px 0 0 0;
+      padding-bottom: 40px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.2px;
+      color: #1B1C21;
+
+      .arrow {
+        position: relative;
+        &::after {
+          content: '';
+          position: absolute;
+          background-image: url(../img/button/arrow-next.svg);
+          background-repeat: no-repeat;
+          right: -25px;
+          margin: 7px 0 0 10px;
+          width: 10px;
+          height: 12px;
+          line-height: 24px;
+        }
+      }
+    }
+
+    &::after {
+
+      @media (min-width: 1120px) {
+        display: none;
+      }
+
+      @media (max-width: 496px) {
+        content: "";
+        position: absolute;
+        top: 18px;
+        z-index: 5;
+        right: 0;
+        width: 24px;
+        height: 200px;
+        background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+      }
+    }
+  }
+}

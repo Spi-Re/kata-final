@@ -1,0 +1,34 @@
+.companies-items--more {
+
+  background: inherit;
+  border: none;
+  cursor: pointer;
+
+  .more-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+
+    &--arrow {
+      content: "";
+      background: url(../img/main/spoiler.svg) no-repeat;
+      margin: 5px 16px 0 8px;
+      float: left;
+      min-width: 8px;
+      min-height: 12px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+
+      @media (min-width: 768px) {
+          margin-left: 9.5px;
+      }
+    }
+
+    &::after {
+      display: table;
+      height: 0;
+      clear: both;
+    }
+  }
+}

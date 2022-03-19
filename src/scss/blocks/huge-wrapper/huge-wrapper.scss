@@ -1,0 +1,28 @@
+.huge-wrapper {
+
+  @media (min-width: 1120px) {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__burger {
+    min-height: 100%;
+    background-color: white;
+  }
+
+  &--price {
+    background-color: #fff;
+    border-radius: 6px;
+    display: flex;
+    flex-wrap: wrap;
+    // height: fit-content;
+    @media (min-width: 499px) {
+      padding: 0 16px;
+    }
+
+    @media (min-width: 1120px) {
+      padding: 0 24px;
+    }
+  }
+}

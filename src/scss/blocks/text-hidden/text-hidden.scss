@@ -1,0 +1,20 @@
+.text-hidden {
+  height: 90px;
+  overflow: hidden;
+
+  @media (min-width: 767px) {
+    height: 160px;
+  }
+
+  @media (min-width: 930px) {
+    height: auto;
+  }
+
+  @media (min-width: 1120px) {
+    height: 120px;
+  }
+
+  @media (min-width: 1440px) {
+    height: 160px;
+  }
+}

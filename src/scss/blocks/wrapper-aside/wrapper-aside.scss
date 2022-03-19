@@ -1,0 +1,76 @@
+.wrapper-aside {
+  position: fixed;
+  top: 0;
+  left: -500px;
+	min-height: 100vh;
+  max-height: 160vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+  min-width: 320px;
+	box-shadow: -130px 0 175px 50px $color-shadow;
+  background-color: $white;
+  transition: left 0.5s;
+
+  @media (min-width: 1120px) {
+    position: static;
+    float: left;
+    box-shadow: none;
+    left: 0;
+  }
+
+  @media (min-width: 1120px) and (max-width: 1200px) {
+    max-width: 280px;
+    min-width: 250px;
+  }
+
+  &--right {
+    position: fixed;
+    top: 0;
+    right: -500px;
+    overflow-y: auto;
+	  min-height: 100%;
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: space-between;
+    max-width: 320px;
+	  box-shadow: 90px 50px 175px 0 $color-shadow;
+    background-color: $white;
+    transition: right 0.5s;
+
+    @media (min-width: 1120px) {
+      overflow-y: visible;
+      max-width: 440px;
+      position: fixed;
+      float: left;
+      box-shadow: 90px 50px 175px 0 $color-shadow;
+      right: -1500px;
+      max-height: 100%;
+    }
+  }
+
+  &--feedback {
+    position: fixed;
+    top: 0;
+    right: -500px;
+	  min-height: 100%;
+    overflow-y: auto;
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: space-between;
+    max-width: 320px;
+	  box-shadow: 90px 50px 175px 0 $color-shadow;
+    background-color: $white;
+    transition: right 0.5s;
+
+    @media (min-width: 1120px) {
+      max-width: 440px;
+      position: fixed;
+      float: left;
+      overflow-y: visible;
+      box-shadow: 90px 50px 175px 0 $color-shadow;
+      right: -1500px;
+      max-height: 100%;
+    }
+  }
+}
