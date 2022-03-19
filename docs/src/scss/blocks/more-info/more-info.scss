@@ -1,0 +1,13 @@
+.more-info {
+  padding: 8px 0 34px 0;
+
+  @media (max-width: 496px) {
+    display: none;
+  }
+
+  &--price {
+    @media (min-width: 470px) {
+      display: none;
+    }
+  }
+}

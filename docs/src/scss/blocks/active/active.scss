@@ -1,0 +1,17 @@
+.active {
+
+  a {
+    color: $color-link--active;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 4px;
+      height: 32px;
+      background-color: $color-title-border;
+      top: -4px;
+      left: -24px;
+      border-radius: 0 10px 10px 0;
+    }
+  }
+}

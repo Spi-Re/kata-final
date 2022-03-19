@@ -1,0 +1,36 @@
+.aside-column {
+
+  &__item {
+
+    &--burger {
+      margin: 4px 16px 0 0;
+
+      @media (min-width: 1120px) {
+          display: none;
+      }
+    }
+
+    &--call {
+      margin: 24px 0 0 16px;
+
+      @media (min-width: 1120px) {
+          margin: 32px 0 15px -70px;
+      }
+
+    }
+
+    &--search {
+      margin: 4px 0 0 0;
+    }
+
+    &--logo {
+      transition: all 1s;
+
+      &:hover {
+        transform: scale(1.1);
+        border-radius: 15px;
+        transition: all 1s;
+      }
+    }
+  }
+}

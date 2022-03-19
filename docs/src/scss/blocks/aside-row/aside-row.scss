@@ -1,0 +1,9 @@
+.aside-row {
+	display: flex;
+	justify-content: space-between;
+	margin: 18px 24px;
+
+  @media (min-width: 1120px) {
+    margin-top: 35px;
+  }
+}

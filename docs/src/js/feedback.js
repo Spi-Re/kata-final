@@ -1,0 +1,46 @@
+let itemChat = document.querySelectorAll('.chat');
+let wrapperAsideChat = document.querySelector('.wrapper-aside--feedback');
+import {commonWrapper} from './menu-burger';
+import {buttonsTopBurger} from './menu-burger';
+let wrapperAside = document.querySelector('.wrapper-aside');
+let hugeWrapper = document.querySelector('.huge-wrapper');
+let widthForChat = window.innerWidth;
+
+
+for (let i = 0; i < itemChat.length; i++) {
+
+  if (widthForChat > 1119) {
+    itemChat[0].addEventListener ('click', function() {
+      wrapperAside.style.display = 'none';
+      wrapperAsideChat.classList.add('order-call');
+      commonWrapper.classList.add('non-click');
+      hugeWrapper.style.opacity = '0.05';
+      hugeWrapper.style.pointerEvents = 'none';
+      wrapperAsideChat.classList.remove('close');
+    })
+  }
+
+  itemChat[i].addEventListener ('click', function() {
+    wrapperAsideChat.classList.add('order-call');
+    commonWrapper.classList.add('non-click');
+    hugeWrapper.style.opacity = '0.05';
+    hugeWrapper.style.pointerEvents = 'none';
+    wrapperAsideChat.classList.remove('close');
+  })
+}
+
+
+for (let j = 0; j < buttonsTopBurger.length; j++) {
+  buttonsTopBurger[j].addEventListener ('click', function() {
+    wrapperAside.style.display = 'flex';
+    wrapperAsideChat.classList.remove('order-call');
+    wrapperAsideChat.classList.add('close');
+    hugeWrapper.style.opacity = '1';
+    hugeWrapper.style.pointerEvents = 'auto';
+    commonWrapper.classList.remove('non-click');
+  })
+}
+
+  // wrapperAside.classList.remove('order-call');
+  //   commonWrapper.classList.remove('non-click');
+  //   wrapperAside.classList.add('close')
