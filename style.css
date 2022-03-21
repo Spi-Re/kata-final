@@ -2062,6 +2062,9 @@ footer {
       text-transform: uppercase;
       border-radius: 16px;
       cursor: pointer; }
+      .order-call__button--red:hover {
+        transform: translateX(-5px);
+        transition: transform 0.5s; }
       .order-call__button--red::after {
         content: '';
         background-image: url(./static/button-arrow.svg);
