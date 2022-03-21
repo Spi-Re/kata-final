@@ -1132,6 +1132,9 @@ body {
           margin: 10px 8px 0 0;
           float: left;
           font-weight: 500; } }
+      .header-column__item--repair-text:hover {
+        text-decoration: underline;
+        color: gray; }
     .header-column__item--check-text {
       display: none; }
       .header-column__item--check-text::after, .header-column__item--check-text::before {
@@ -1145,6 +1148,9 @@ body {
           margin: 10px 8px 0 0;
           float: left;
           font-weight: 500; } }
+      .header-column__item--check-text:hover {
+        text-decoration: underline;
+        color: gray; }
 
 .about-company {
   /* ====================================== */ }
@@ -1270,6 +1276,8 @@ body {
           font-weight: 500;
           font-size: 16px;
           line-height: 24px; }
+          .about-company__main-column--text--more .more-texts:hover {
+            text-decoration: underline; }
           .about-company__main-column--text--more .more-texts--arrows {
             content: "";
             background: url(./static/spoiler.svg) no-repeat;
@@ -1580,9 +1588,7 @@ footer {
   transition: all 0.3s; }
   @media (min-width: 1120px) {
     .common-wrapper {
-      min-height: 100%;
-      max-width: 1120px;
-      float: left; } }
+      min-height: 100%; } }
 
 /* ============ slider - section ============== */
 .body-section {
@@ -1795,6 +1801,9 @@ footer {
   .item-company__go--button {
     height: 40px;
     cursor: pointer; }
+    .item-company__go--button:hover {
+      transform: rotate(360deg);
+      transition: all 1s; }
   .item-company__botton-location {
     align-self: flex-end;
     margin: 0 0 16px 0; }
@@ -1928,6 +1937,8 @@ footer {
     font-weight: 500;
     font-size: 16px;
     line-height: 24px; }
+    .companies-items--more .more-text:hover {
+      text-decoration: underline; }
     .companies-items--more .more-text--arrow {
       content: "";
       background: url(./static/spoiler.svg) no-repeat;
