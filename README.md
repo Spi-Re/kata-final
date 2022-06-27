@@ -1,1 +1,1 @@
-Финальный макет 
+https://spi-re.github.io/kata-final/
